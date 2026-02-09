@@ -90,6 +90,15 @@ This lab was built to develop practical experience with:
 
 <img width="1185" height="835" alt="domainuserclient" src="https://github.com/user-attachments/assets/f68fce3c-37f7-49e3-b51d-fae36a38b8e3" />
 
+---
+
+### 4. Creating Organized Units (OUs)
+- Default Active Directory containers don't support Group Policy
+- Created custom Organizational Units (OUs) at the domain root and moved user and computer objects into them for proper Group Policy scoping.
+- 
+<img width="1156" height="829" alt="domaincomputer" src="https://github.com/user-attachments/assets/dcbcac1d-60ab-47e3-af63-d9265dbcb347" />
+
+<img width="1227" height="874" alt="domainuser" src="https://github.com/user-attachments/assets/1fad9600-e102-4267-b921-e5acb44197f1" />
 
 ---
 
