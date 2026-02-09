@@ -16,8 +16,8 @@ The goal of this lab is to gain hands-on experience with domain controllers, cli
 - **Server OS:** [Windows Server 2022 Evaluation](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
 - **Client OS:** [Windows 11 Enterprise Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
 - **Domain:** `lab.local`
+<img width="948" height="756" alt="Screenshot 2026-02-09 120444" src="https://github.com/user-attachments/assets/28eef2cf-10a7-4bfa-9cbe-5510a277372b" />
 
-*Screenshots coming soon*
 
 ---
 
@@ -27,8 +27,10 @@ The goal of this lab is to gain hands-on experience with domain controllers, cli
 - NAT adapter for internet access
 - Domain controller assigned a static IP address
 - Client configured to use the domain controller as DNS
+<img width="955" height="753" alt="hostonly" src="https://github.com/user-attachments/assets/608734bd-201a-4965-a68e-c18eb8b95fc7" />
+<img width="943" height="741" alt="nat" src="https://github.com/user-attachments/assets/87aa4351-9f56-4700-81b4-33a322723cec" />
 
-*Screenshots coming soon*
+
 
 ---
 
@@ -54,7 +56,8 @@ This lab was built to develop practical experience with:
 - Configured DNS services
 - Assigned a static IP address
 
-*Screenshots coming soon*
+<img width="1135" height="823" alt="serveradapters" src="https://github.com/user-attachments/assets/d562b6b4-f4c4-4233-91ec-3c57d6232602" />
+<img width="1212" height="824" alt="serverping" src="https://github.com/user-attachments/assets/f7c74252-54a5-4bcf-89b7-9dd5623520e7" />
 
 ---
 
