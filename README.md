@@ -95,7 +95,7 @@ This lab was built to develop practical experience with:
 ---
 
 ### 4. Creating Organized Units (OUs)
-- Default Active Directory containers don't support Group Policy
+- Default Active Directory containers doesn't support Group Policy
 - Created custom Organizational Units (OUs) at the domain root and moved user and computer objects into them for proper Group Policy scoping.
   
 <img width="1156" height="829" alt="domaincomputer" src="https://github.com/user-attachments/assets/dcbcac1d-60ab-47e3-af63-d9265dbcb347" />
@@ -104,10 +104,29 @@ This lab was built to develop practical experience with:
 
 ---
 
+### 5. Creating a Wallpaper Group Policy (GPOs)
+- Created folder on Domain Controller with 2 (IT & General Staff) wallpapers in it
+- Created Desktop Wallpaper Group Policy to force image as wallpaper
+  
+<img width="1185" height="848" alt="staffdesktopgpo" src="https://github.com/user-attachments/assets/19e0de67-f8ed-4636-83cb-98e78635a62b" />
+
+<img width="1179" height="883" alt="sharedwallpaperfolder" src="https://github.com/user-attachments/assets/e23db93d-4fed-4547-838a-ada63df10a7b" />
+
+<img width="1245" height="857" alt="staffwallpaper" src="https://github.com/user-attachments/assets/e8d2bab1-d861-4268-b93d-8949d5aa179d" />
+
+<img width="1194" height="859" alt="itwallpaper" src="https://github.com/user-attachments/assets/ad05f170-d263-4c4c-8ec3-3a9914612f2f" />
+
+---
+### 6. Create Data-Share Folder (File Share)
+
+
+---
+
 ## Skills Developed
 
 - Windows Server administration
 - Active Directory management
+- Creating Basic Group Policies
 - DNS troubleshooting
 - Network configuration
 - Virtual lab design
