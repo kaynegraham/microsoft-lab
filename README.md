@@ -16,7 +16,7 @@ The goal of this lab is to gain hands-on experience with domain controllers, cli
 - **Server OS:** [Windows Server 2022 Evaluation](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
 - **Client OS:** [Windows 11 Enterprise Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
 - **Domain:** `lab.local`
-- 
+  
 <img width="948" height="756" alt="Screenshot 2026-02-09 120444" src="https://github.com/user-attachments/assets/28eef2cf-10a7-4bfa-9cbe-5510a277372b" />
 
 ---
@@ -85,17 +85,19 @@ This lab was built to develop practical experience with:
 - Created a domain user account in Active Directory
 - Successfully joined Windows 11 client to the domain
 - Verified domain login using domain credentials
-- 
+  
 <img width="1202" height="872" alt="createuserinad" src="https://github.com/user-attachments/assets/245a6e6e-f18c-4bba-a955-d15b6059e1ad" />
 
 <img width="1185" height="835" alt="domainuserclient" src="https://github.com/user-attachments/assets/f68fce3c-37f7-49e3-b51d-fae36a38b8e3" />
+
+<img width="1233" height="839" alt="domainloginscreen" src="https://github.com/user-attachments/assets/b8fae576-c985-4c1f-a5be-1a30c75f0fe0" />
 
 ---
 
 ### 4. Creating Organized Units (OUs)
 - Default Active Directory containers don't support Group Policy
 - Created custom Organizational Units (OUs) at the domain root and moved user and computer objects into them for proper Group Policy scoping.
-- 
+  
 <img width="1156" height="829" alt="domaincomputer" src="https://github.com/user-attachments/assets/dcbcac1d-60ab-47e3-af63-d9265dbcb347" />
 
 <img width="1227" height="874" alt="domainuser" src="https://github.com/user-attachments/assets/1fad9600-e102-4267-b921-e5acb44197f1" />
@@ -125,167 +127,4 @@ This lab was built to develop practical experience with:
 
 **Resolution:** Performed a clean installation of Windows 11 Enterprise Evaluation ISO to ensure full domain compatibility.
 
-
 ---
-
-# Windows Server 2022 Active Directory Home Lab
-
-## Overview
-
-This project documents a Windows home lab built to simulate a small business Active Directory environment. The lab demonstrates core IT support and system administration fundamentals relevant to entry-level helpdesk and MSP roles.
-
-The goal of this lab is to gain hands-on experience with domain controllers, client domain joining, DNS configuration, and shared resource management in a controlled virtual environment.
-
----
-
-## Lab Architecture
-
-### Environment
-
-- **Hypervisor:** [Oracle VirtualBox](https://www.virtualbox.org/)
-- **Server OS:** [Windows Server 2022 Evaluation](https://www.microsoft.com/en-us/evalcenter/download-windows-server-2022)
-- **Client OS:** [Windows 11 Enterprise Evaluation](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-11-enterprise)
-- **Domain:** `lab.local`
-
-![Lab Architecture Overview](https://github.com/user-attachments/assets/28eef2cf-10a7-4bfa-9cbe-5510a277372b)
-
----
-
-### Network Configuration
-
-- Internal virtual network for domain communication  
-- NAT adapter for internet access  
-- Domain controller assigned a static IP address  
-- Client configured to use the domain controller as its DNS server  
-
-![Host-only Network Configuration](https://github.com/user-attachments/assets/608734bd-201a-4965-a68e-c18eb8b95fc7)
-
-![NAT Network Configuration](https://github.com/user-attachments/assets/87aa4351-9f56-4700-81b4-33a322723cec)
-
----
-
-## Purpose
-
-This lab was built to develop practical experience with:
-
-- Active Directory Domain Services (AD DS) deployment
-- DNS configuration and troubleshooting
-- Joining Windows clients to a domain
-- Virtual network design and configuration
-- Technical documentation and structured troubleshooting
-
----
-
-## Implementation
-
-### 1. Domain Controller Setup
-
-- Installed Windows Server 2022
-- Installed Active Directory Domain Services (AD DS)
-- Promoted the server to a domain controller
-- Configured DNS services
-- Assigned a static IP address
-
-![Server Network Adapters](https://github.com/user-attachments/assets/b66eb322-8262-4361-92bb-3547416a244c)
-
-![Server Connectivity Verification](https://github.com/user-attachments/assets/f7c74252-54a5-4bcf-89b7-9dd5623520e7)
-
----
-
-### 2. Client Domain Join
-
-- Installed Windows 11 Enterprise Evaluation
-- Configured client DNS to point to the domain controller
-- Verified network connectivity between client and server
-- Joined the client to the `lab.local` domain
-
-![Client to Server Connectivity Test](https://github.com/user-attachments/assets/b0b591ea-a7f2-4ef6-9480-796032dee012)
-
-![Domain Join Process](https://github.com/user-attachments/assets/5504f549-2d87-4900-a348-975198fc2b05)
-
-![Successful Domain Join Confirmation](https://github.com/user-attachments/assets/be7ad861-dbe5-4905-a7a3-0136a4e1db80)
-
----
-
-### 3. Active Directory Authentication
-
-- Created a domain user account in Active Directory
-- Used domain credentials to authenticate on the Windows 11 client
-- Verified successful domain login
-
- ![Creating User in Active Directory]("https://github.com/user-attachments/assets/245a6e6e-f18c-4bba-a955-d15b6059e1ad")
- 
-
-![Settings Profile of Domain User]("https://github.com/user-attachments/assets/f68fce3c-37f7-49e3-b51d-fae36a38b8e3")
-
----
-
-## Skills Demonstrated
-
-- Windows Server administration
-- Active Directory user and domain management
-- DNS configuration and troubleshooting
-- Network configuration and validation
-- Virtual lab design
-- Technical documentation
-
----
-
-## Challenges & Troubleshooting
-
-### Client Unable to Join Domain
-
-**Issue:**  
-The Windows 11 client initially failed to join the domain due to incorrect DNS configuration.
-
-**Resolution:**  
-Manually configured the client to use the domain controller as its DNS server, restoring name resolution and enabling successful domain join.
-
----
-
-### Windows 11 Edition Limitation
-
-**Issue:**  
-Windows 11 Home does not support joining an Active Directory domain.
-
-**Resolution:**  
-Performed a clean installation of Windows 11 Enterprise Evaluation to ensure full domain compatibility.
-
----
-
-## Future Improvements
-
-- Create structured Active Directory Organizational Units (OUs)
-- Implement basic Group Policy Objects (GPOs)
-- Configure shared file resources
-- Add additional domain-joined clients
-- Expand network complexity and scenarios
-
----
-
-## Conclusion
-
-This lab provided practical, hands-on experience with enterprise Windows environments and reinforced core IT support concepts used in real-world helpdesk and MSP roles.
-
-The environment will continue to be expanded to support ongoing learning and experimentation.
-
-
-## Future Improvements
-
-- Create structured Active Directory Organizational Units (OUs)
-- Implement basic Group Policy Objects (GPOs)
-- Configure shared file resources
-- Add additional client machines
-- Expand network complexity
-
----
-
-## Conclusion
-
-This lab provided practical, hands-on experience with enterprise Windows environments and reinforced core IT support concepts used in real-world helpdesk and MSP roles.
-
-This environment will continue to be expanded to support ongoing learning and experimentation.
-
----
-
-
