@@ -156,4 +156,9 @@ This lab was built to develop practical experience with:
 
 **Resolution:** Performed a clean installation of Windows 11 Enterprise Evaluation ISO to ensure full domain compatibility.
 
+### Incorrect File Sharing Permissions
+**Issue:** Wallpaper wouldn't set on Client device
+
+**Resolution**: Tested folder access using run which failed, I reconfigured folder permissions on the Domain Controller and logged back into the Client.
+
 ---
