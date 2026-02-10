@@ -10,6 +10,9 @@ The goal of this lab is to gain hands-on experience with domain controllers, cli
 
 ## Lab Architecture
 
+<img width="711" height="606" alt="windowsadlab (1)" src="https://github.com/user-attachments/assets/4f089984-fac6-4c5d-ad9d-d4f0decf47ea" />
+
+
 ### Environment
 
 - **Hypervisor:** [Oracle VirtualBox](https://www.virtualbox.org/)
