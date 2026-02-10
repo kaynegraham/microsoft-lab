@@ -94,8 +94,8 @@ This lab was built to develop practical experience with:
 
 ---
 
-### 4. Creating Organized Units (OUs)
-- Default Active Directory containers doesn't support Group Policy
+### 4. Creating Organizational Units (OUs)
+- Default Active Directory containers do not support Group Policy
 - Created custom Organizational Units (OUs) at the domain root and moved user and computer objects into them for proper Group Policy scoping.
   
 <img width="1156" height="829" alt="domaincomputer" src="https://github.com/user-attachments/assets/dcbcac1d-60ab-47e3-af63-d9265dbcb347" />
@@ -107,6 +107,7 @@ This lab was built to develop practical experience with:
 ### 5. Creating a Wallpaper Group Policy (GPOs)
 - Created folder on Domain Controller with 2 (IT & General Staff) wallpapers in it
 - Created Desktop Wallpaper Group Policy to force image as wallpaper
+- Verified policy application using gpresult and user logoff/logon testing
   
 <img width="1185" height="848" alt="staffdesktopgpo" src="https://github.com/user-attachments/assets/19e0de67-f8ed-4636-83cb-98e78635a62b" />
 
@@ -118,6 +119,14 @@ This lab was built to develop practical experience with:
 
 ---
 ### 6. Create Data-Share Folder (File Share)
+- Created folder on Domain Controller with 2 (IT & General Staff) folders in it
+- Set permissions so IT has full control & Staff has access to their folder
+- Used Active Directory security groups to control access to shared folders
+  
+<img width="1225" height="879" alt="companysharefolder" src="https://github.com/user-attachments/assets/257df73e-7889-4e9e-a874-9d870d15920d" />
+<img width="1174" height="864" alt="itusersgroup" src="https://github.com/user-attachments/assets/cd2427d1-ff9f-4145-9677-61452daa0347" />
+<img width="1233" height="842" alt="companyshareperms" src="https://github.com/user-attachments/assets/4c774b97-57e5-45e9-90e8-0e2658af57db" />
+<img width="1257" height="866" alt="noitaccess" src="https://github.com/user-attachments/assets/fffa6980-dd84-4b4d-b30a-4686cedeffca" />
 
 
 ---
@@ -127,6 +136,7 @@ This lab was built to develop practical experience with:
 - Windows Server administration
 - Active Directory management
 - Creating Basic Group Policies
+- Beginner File Sharing permissions
 - DNS troubleshooting
 - Network configuration
 - Virtual lab design
